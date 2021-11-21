@@ -1,7 +1,7 @@
 const aplication = document.querySelector('.container')
 const getUrl = new URLSearchParams(window.location.search)
-id = getUrl.get('id')
-//const url = 'http://jsonplaceholder.typicode.com/users'
+id = getUrl.get('usuario')
+const url = 'https://wsrecursoshumanos.azurewebsites.net'
 console.log(`${url}/${id}`)
 fetch(`${url}/${id}`)
 .then(res => res.json())

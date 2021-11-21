@@ -1,6 +1,6 @@
 const aplication = document.querySelector('.container')
 
-//const url = 'http://jsonplaceholder.typicode.com/users'
+const url = 'https://wsrecursoshumanos.azurewebsites.net'
 
 fetch(url)
 .then(res => res.json())
