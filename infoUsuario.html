@@ -55,11 +55,33 @@
       <main>
     <!-- START USER INFO -->
     <div class="mt-3 border-bottom">
-      <div id="lista" class="row d-flex justify-content-around mb-5">
+      <div class="mt-3 border-bottom">
+        <div class="d-flex justify-content-around flex-wrap">
+            <div class="mb-3 d-flex flex-column align-items-center">
+                <p class="font-weight-bold">Usuario</p>
+                <p id="username"></p>
+            </div>
+            <div class="mb-3 d-flex flex-column align-items-center">
+                <p class="font-weight-bold">Nombre</p>
+                <p id="nombre"></p>
+            </div>
+            <div class="mb-3 d-flex flex-column align-items-center flex-wrap">
+                <p class="font-weight-bold">Correo</p>
+                <p id="correo"></p>
+            </div>
+            <div class="mb-3 d-flex flex-column align-items-center">
+                <p class="font-weight-bold">Teléfono</p>
+                <p id="telefono"></p>
+            </div>
+            <div class="mb-3 d-flex flex-column align-items-center">
+                <p class="font-weight-bold">Rol</p>
+                <p id="rol"></p>
+            </div>
+            
         </div>
         <div class="mb-2 d-flex flex-row justify-content-center">
-            <a id="#" href="/formNuevosDatos.html?username=pruebas8" class="btn btn-dark mr-2">Crear datos</a>
-            <a id="#" href="/formModificarDatos.html?username=pruebas8" class="btn btn-dark mr-2">Modificar datos</a>
+            <a id="btn-crear-datos" href="#" class="btn btn-dark mr-2">Crear datos</a>
+            <a id="btn-modificar-datos" href="#" class="btn btn-dark mr-2">Modificar datos</a>
         </div>
     </div>
       <!-- END USER INFO -->

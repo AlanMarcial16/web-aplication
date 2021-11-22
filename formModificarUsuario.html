@@ -56,13 +56,28 @@
     <!-- START USER FORM -->
     <form class="row justify-content-center mx-2">
         <div id="form" class="col-sm-12 col-md-10"></div>
+        <div class="col-sm-12 col-md-10">
+          <fieldset class="row border mb-4">
+            <legend class="font-weight-bold w-auto">Datos generales</legend>
+            <div class="form-group col-md-6 col-sm-12">
+              <label for="nombreproyecto" class="font-weight-bold">Nombre usuario actual:</label>
+              <input type="text" disabled class="form-control" id="oldUser" placeholder="Introducir nombre de usuario actual" name="oldUser" required>
+            </div>
+            <div class="form-group col-md-6 col-sm-12">
+              <label for="nombreproyecto" class="font-weight-bold">Nuevo nombre usuario:</label>
+              <input type="text" class="form-control" id="newUser" placeholder="Introducir nuevo nombre de usuario" name="newUser" required>
+            </div>
+            <div class="form-group col-md-6 col-sm-12">
+              <label for="descripcion" class="font-weight-bold">Nueva contraseña:</label>
+              <input type="password" class="form-control" id="newPass" placeholder="Introducir nueva contraseña" name="newPass" required>
+            </div>
           </fieldset>
           <div class="row">
             <button type="submit" class="col btn btn-dark mr-2 my-4">Modificar Usuario</button>
             <a href="/dashboard.html" class="col btn btn-outline-secondary ml-2 my-4">Cancelar</a>
           </div>
         </div>  
-      </form>
+    </form>
       <!-- END USER FORM -->
       </main>
   </section>
