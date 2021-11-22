@@ -1,20 +1,19 @@
 import {API_URL} from './config.js'
-import {LoadingBar} from './LoadingBar.js'
 
 function signIn(e) {
     e.preventDefault()
 
-    LoadingBar.show()
-
     const body = JSON.stringify({
         usuario: `${e.target.querySelector('[name="usuario"]').value}`,
         contrasena: `${e.target.querySelector('[name="contrasena"]').value}`
+        
+        
     })
     
     const url = e.target.action
 
     fetch(url,{
-        method: 'POST',
+        method: 'GET',
         headers: {"Content-Type": "application/json"},
         body
     })
